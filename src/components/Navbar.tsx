@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import type { FC } from "react";
 import clsx from "clsx";
 import Photo from "@/assets/images/20250605_174037.jpg";
+import Cv from "@/assets/files/rami-obaid-CV.pdf";
 
 interface NavLink {
   title: string;
@@ -88,7 +89,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-8">
               <NavLinksList links={navLinks} className={desktopNavClasses} />
               <a
-                href="/src/assets/rami-obaid-resume.pdf"
+                href={Cv}
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -131,7 +132,7 @@ const Navbar = () => {
               onLinkClick={() => setIsOpen(false)}
             />
             <a
-              href="/assets/rami-obaid-resume.pdf"
+              href={Cv}
               className="block px-3 py-2 text-blue-600 font-medium"
               target="_blank"
               rel="noopener noreferrer"
