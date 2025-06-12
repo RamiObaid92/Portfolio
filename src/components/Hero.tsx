@@ -66,6 +66,11 @@ const Hero = () => {
               </div>
               <div className="absolute bottom-0 right-10 bg-white p-2 rounded-full shadow-lg">
                 <span className="text-yellow-600 font-bold text-xl">
+                  JavaScript
+                </span>
+              </div>
+              <div className="absolute top-1/2 -right-10 bg-white p-2 rounded-full shadow-lg">
+                <span className="text-blue-500 font-bold text-xl">
                   TypeScript
                 </span>
               </div>
