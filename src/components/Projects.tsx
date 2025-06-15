@@ -54,6 +54,12 @@ const Projects: FC = () => {
       ? projectsData
       : projectsData.filter((project) => project.category === filter);
 
+  const filters: { label: string; value: ProjectCategory | "all" }[] = [
+    { label: "All Projects", value: "all" },
+    { label: "Web", value: "web" },
+    { label: "Mobile", value: "mobile" },
+  ];
+
   return (
     <div className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,24 +72,15 @@ const Projects: FC = () => {
           Explore my recent work and personal projects
         </p>
         <div className="flex justify-center space-x-4 mb-12">
-          <button
-            onClick={() => setFilter("all")}
-            className={`px-4 py-2 rounded-full ${filter === "all" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"} transition-colors`}
-          >
-            All Projects
-          </button>
-          <button
-            onClick={() => setFilter("web")}
-            className={`px-4 py-2 rounded-full ${filter === "web" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"} transition-colors`}
-          >
-            Web
-          </button>
-          <button
-            onClick={() => setFilter("mobile")}
-            className={`px-4 py-2 rounded-full ${filter === "mobile" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"} transition-colors`}
-          >
-            Mobile
-          </button>
+          {filters.map((f) => (
+            <button
+              key={f.value}
+              onClick={() => setFilter(f.value)}
+              className={`px-4 py-2 rounded-full ${filter === f.value ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"} transition-colors`}
+            >
+              {f.label}
+            </button>
+          ))}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
