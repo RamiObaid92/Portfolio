@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
 import { useEffect, type FC } from "react";
+import Footer from "./components/Footer";
 
 const App: FC = () => {
   useEffect(() => {
@@ -65,6 +66,9 @@ const App: FC = () => {
         </section>
         <section id="contact">
           <Contact />
+        </section>
+        <section id="footer">
+          <Footer />
         </section>
       </main>
     </div>

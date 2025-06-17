@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import type { FC } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 interface ContactFormData {
   name: string;
@@ -60,8 +61,8 @@ const contactInfo: ContactInfoItem[] = [
       </svg>
     ),
     label: "Phone",
-    value: "+1 (123) 456-7890",
-    href: "tel:+11234567890",
+    value: "+46 73 748 17 95",
+    href: "tel:+46737481795",
   },
   {
     icon: (
@@ -86,14 +87,14 @@ const contactInfo: ContactInfoItem[] = [
       </svg>
     ),
     label: "Location",
-    value: "Sweden, sthlm",
+    value: "Sweden, Stockholm",
   },
 ];
 
 const socialLinks: SocialLink[] = [
   {
     name: "LinkedIn",
-    href: "linkedin.com/in/rami-obaid-102594338",
+    href: "https://linkedin.com/in/rami-obaid-102594338",
     icon: (
       <svg className="w-9 h-9" fill="currentColor" viewBox="0 0 24 24">
         <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
@@ -117,7 +118,9 @@ const Contact: FC = () => {
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
-  } = useForm<ContactFormData>();
+  } = useForm<ContactFormData>({
+    mode: "onBlur",
+  });
 
   const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(
     null,
@@ -125,11 +128,21 @@ const Contact: FC = () => {
 
   const onSubmit: SubmitHandler<ContactFormData> = async (data) => {
     try {
-      console.log("Submitting data:", data);
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceID || !templateID || !publicKey) {
+        throw new Error("EmailJS environment variables are not set correctly.");
+      }
+
+      const templateParams = { ...data };
+
+      await emailjs.send(serviceID, templateID, templateParams, publicKey);
       setSubmitStatus("success");
       reset();
     } catch (error) {
+      console.error("Error submitting Email:", error);
       setSubmitStatus("error");
     }
   };
