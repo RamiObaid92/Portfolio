@@ -68,7 +68,6 @@ const Navbar = () => {
     <nav className={navClasses}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo Section */}
           <div className="flex items-center space-x-3">
             <img
               src={Photo}
@@ -84,7 +83,6 @@ const Navbar = () => {
               Rami Obaid
             </span>
           </div>
-          {/* Navigation Links */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
               <NavLinksList links={navLinks} className={desktopNavClasses} />
@@ -98,7 +96,6 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          {/* Mobile Menu Button */}
           <button
             className={clsx("md:hidden", {
               "text-gray-900": scrolled,
@@ -122,7 +119,6 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg rounded-b-lg mt-2">
           <div className="px-2 pt-2 pb-3 space-y-1">
