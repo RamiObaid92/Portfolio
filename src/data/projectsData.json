@@ -1,0 +1,66 @@
+[
+{
+    "id": "alpha-portal-frontend",
+    "title": "Alpha Portal Frontend",
+    "description": "Alpha Portal frontend for managing projects, clients, and users with a RESTful API.",
+    "tags": ["HTML", "CSS", "React", "REST", "Azure"],
+    "githubUrl": "https://github.com/RamiObaid92/Backend",
+    "category": "Backend"
+  },
+{
+    "id": "alpha-portal-backend",
+    "title": "Alpha Portal Backend API",
+    "description": "Alpha Portal backend service for managing projects, clients.",
+    "tags": ["C#", "SQL", "ASP.NET Core", "EF Core", "Web API", "JWT", "Azure"],
+    "githubUrl": "https://github.com/RamiObaid92/Backend",
+    "category": "Backend"
+  },
+  {
+    "id": "ventixe-frontend",
+    "title": "Ventixe Frontend",
+    "description": "The frontend for the Ventixe event platform, built with ASP.NET Core MVC.",
+    "tags": ["C#", "ASP.NET Core", "MVC", "HTML", "CSS", "Bootstrap", "JavaScript", "REST", "gRPCS", "Azure"],
+    "githubUrl": "https://github.com/Ventixe-PROG2024-G1/Frontend",
+    "category": "Frontend"
+  },
+  {
+    "id": "ventixe-events-backend",
+    "title": "Ventixe Events Backend",
+    "description": "A dedicated backend service for managing events on the Ventixe platform using Azure services.",
+    "tags": ["C#", ".NET", "ASP.NET Core", "EF Core", "Web API", "Azure"],
+    "githubUrl": "https://github.com/RamiObaid92/Ventixe-Events-Backend",
+    "category": "Backend"
+  },
+  {
+    "id": "ventixe-imageservice-backend",
+    "title": "Ventixe Image Service Backend",
+    "description": "A microservice for handling image uploads and management for the Ventixe platform using Azure services.",
+    "tags": ["C#", ".NET", "ASP.NET Core", "EF Core", "Web API", "Azure"],
+    "githubUrl": "https://github.com/RamiObaid92/Ventixe-ImageService-Backend",
+    "category": "Backend"
+  },
+  {
+    "id": "my-portfolio",
+    "title": "My Portfolio",
+    "description": "This current portfolio website.",
+    "tags": ["HTML", "CSS", "Tailwind", "React", "TypeScript"],
+    "githubUrl": "https://github.com/RamiObaid92/Portfolio",
+    "category": "Frontend"
+  },
+  {
+    "id": "hederlige-harrys",
+    "title": "Hederlige Harrys",
+    "description": "A group project website for a fictional used car dealership.",
+    "tags": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    "githubUrl": "https://github.com/boopaboy/Hederlige-Harrys-",
+    "category": "Frontend"
+  },
+  {
+    "id": "movie-booking-react",
+    "title": "Movie Booking App",
+    "description": "A frontend application for booking movie tickets, built with React.",
+    "tags": ["HTML", "CSS", "React", "JavaScript"],
+    "githubUrl": "https://github.com/RamiObaid92/Movie-Booking-React",
+    "category": "Frontend"
+  }
+]

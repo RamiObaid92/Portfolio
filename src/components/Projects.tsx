@@ -2,17 +2,6 @@ import { useState } from "react";
 import type { FC } from "react";
 import ProjectCard from "@/components/ProjectCard";
 
-type ProjectCategory = "web" | "mobile";
-
-interface Project {
-  title: string;
-  description: string;
-  image: string;
-  tags: string[];
-  liveUrl: string;
-  githubUrl: string;
-  category: ProjectCategory;
-}
 const projectsData: Project[] = [
   {
     title: "E-commerce Platform",
