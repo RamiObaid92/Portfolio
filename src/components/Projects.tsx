@@ -1,39 +1,10 @@
 import { useState } from "react";
 import type { FC } from "react";
 import ProjectCard from "@/components/ProjectCard";
+import type { Project, ProjectCategory } from "@/types/projectTypes";
+import allProjectsData from "@/data/projectsData.json";
 
-const projectsData: Project[] = [
-  {
-    title: "E-commerce Platform",
-    description:
-      "A modern e-commerce platform built with React and .NET, featuring user authentication, product catalog, and payment processing.",
-    image: "/project1.jpg",
-    tags: ["React", "C#", ".NET", "SQL"],
-    liveUrl: "https://project1.com",
-    githubUrl: "https://github.com/username/project1",
-    category: "web",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "A productivity application for managing tasks and projects with real-time updates and team collaboration features.",
-    image: "/project2.jpg",
-    tags: ["Vue.js", "Node.js", "MongoDB"],
-    liveUrl: "https://project2.com",
-    githubUrl: "https://github.com/username/project2",
-    category: "mobile",
-  },
-  {
-    title: "Social Media Dashboard",
-    description:
-      "A dashboard for monitoring and analyzing social media metrics across multiple platforms.",
-    image: "/project6.jpg",
-    tags: ["Vue.js", "Chart.js", "CSS Grid"],
-    liveUrl: "https://project6.com",
-    githubUrl: "https://github.com/username/project6",
-    category: "web",
-  },
-];
+const projectsData: Project[] = allProjectsData as Project[];
 
 const Projects: FC = () => {
   const [filter, setFilter] = useState<ProjectCategory | "all">("all");
@@ -46,7 +17,7 @@ const Projects: FC = () => {
   const filters: { label: string; value: ProjectCategory | "all" }[] = [
     { label: "All Projects", value: "all" },
     { label: "Web", value: "web" },
-    { label: "Mobile", value: "mobile" },
+    { label: "Desktop", value: "desktop" },
   ];
 
   return (

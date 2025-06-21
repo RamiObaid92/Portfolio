@@ -3,64 +3,104 @@
     "id": "alpha-portal-frontend",
     "title": "Alpha Portal Frontend",
     "description": "Alpha Portal frontend for managing projects, clients, and users with a RESTful API.",
-    "tags": ["HTML", "CSS", "React", "REST", "Azure"],
-    "githubUrl": "https://github.com/RamiObaid92/Backend",
-    "category": "Backend"
+    "tags": ["Backend", "HTML", "CSS", "React", "REST", "Azure"],
+    "githubUrl": "https://github.com/RamiObaid92/Frontend.git",
+    "category": "Web"
   },
 {
     "id": "alpha-portal-backend",
     "title": "Alpha Portal Backend API",
     "description": "Alpha Portal backend service for managing projects, clients.",
-    "tags": ["C#", "SQL", "ASP.NET Core", "EF Core", "Web API", "JWT", "Azure"],
-    "githubUrl": "https://github.com/RamiObaid92/Backend",
-    "category": "Backend"
+    "tags": ["Backend", "C#", "SQL", "ASP.NET Core", "EF Core", "Web API", "JWT", "Azure"],
+    "githubUrl": "https://github.com/RamiObaid92/Backend.git",
+    "category": "Web"
   },
   {
     "id": "ventixe-frontend",
     "title": "Ventixe Frontend",
     "description": "The frontend for the Ventixe event platform, built with ASP.NET Core MVC.",
-    "tags": ["C#", "ASP.NET Core", "MVC", "HTML", "CSS", "Bootstrap", "JavaScript", "REST", "gRPCS", "Azure"],
-    "githubUrl": "https://github.com/Ventixe-PROG2024-G1/Frontend",
-    "category": "Frontend"
+    "tags": ["Frontend", "Backend", "C#", "ASP.NET Core", "MVC", "HTML", "CSS", "Bootstrap", "JavaScript", "REST", "gRPCS", "Azure"],
+    "githubUrl": "https://github.com/Ventixe-PROG2024-G1/Frontend.git",
+    "category": "Web"
   },
   {
     "id": "ventixe-events-backend",
     "title": "Ventixe Events Backend",
     "description": "A dedicated backend service for managing events on the Ventixe platform using Azure services.",
-    "tags": ["C#", ".NET", "ASP.NET Core", "EF Core", "Web API", "Azure"],
-    "githubUrl": "https://github.com/RamiObaid92/Ventixe-Events-Backend",
-    "category": "Backend"
+    "tags": ["Backend", "C#", ".NET", "ASP.NET Core", "EF Core", "Web API", "Azure"],
+    "githubUrl": "https://github.com/RamiObaid92/Ventixe-Events-Backend.git",
+    "category": "Web"
   },
   {
     "id": "ventixe-imageservice-backend",
     "title": "Ventixe Image Service Backend",
     "description": "A microservice for handling image uploads and management for the Ventixe platform using Azure services.",
     "tags": ["C#", ".NET", "ASP.NET Core", "EF Core", "Web API", "Azure"],
-    "githubUrl": "https://github.com/RamiObaid92/Ventixe-ImageService-Backend",
-    "category": "Backend"
+    "githubUrl": "https://github.com/RamiObaid92/Ventixe-ImageService-Backend.git",
+    "category": "Web"
   },
   {
     "id": "my-portfolio",
     "title": "My Portfolio",
     "description": "This current portfolio website.",
-    "tags": ["HTML", "CSS", "Tailwind", "React", "TypeScript"],
-    "githubUrl": "https://github.com/RamiObaid92/Portfolio",
-    "category": "Frontend"
+    "tags": ["Frontend", "HTML", "CSS", "Tailwind", "React", "TypeScript"],
+    "githubUrl": "https://github.com/RamiObaid92/Portfolio.git",
+    "category": "Web"
   },
   {
     "id": "hederlige-harrys",
     "title": "Hederlige Harrys",
     "description": "A group project website for a fictional used car dealership.",
-    "tags": ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    "githubUrl": "https://github.com/boopaboy/Hederlige-Harrys-",
-    "category": "Frontend"
+    "tags": ["Frontend", "HTML", "CSS", "Bootstrap", "JavaScript"],
+    "githubUrl": "https://github.com/boopaboy/Hederlige-Harrys-.git",
+    "category": "Web"
   },
   {
     "id": "movie-booking-react",
     "title": "Movie Booking App",
     "description": "A frontend application for booking movie tickets, built with React.",
-    "tags": ["HTML", "CSS", "React", "JavaScript"],
-    "githubUrl": "https://github.com/RamiObaid92/Movie-Booking-React",
-    "category": "Frontend"
+    "tags": ["Frontend", "HTML", "CSS", "React", "JavaScript"],
+    "githubUrl": "https://github.com/RamiObaid92/Movie-Booking-React.git",
+    "category": "Web"
+  },
+  {
+    "id": "shotgun-forms",
+    "title": "Shotgun Game",
+    "description": "A game of Shotgun where you play against the computer.",
+    "tags": ["Desktop", "C#", ".NET", "WinForms"],
+    "githubUrl": "https://github.com/RamiObaid92/FormShotgun.git",
+    "category": "Desktop"
+  },
+  {
+    "id": "adress-book",
+    "title": "Address Form",
+    "description": "A simple address form application to manage contacts.",
+    "tags": ["Desktop", "C#", ".NET", "SQL Server", "WinForms"],
+    "githubUrl": "https://github.com/RamiObaid92/FormAdress.git",
+    "category": "Desktop"
+  },
+  {
+    "id": "ad-form",
+    "title": "Ad Form",
+    "description": "A simple ad form application to manage ads.",
+    "tags": ["Desktop", "C#", ".NET", "SQL Server", "WinForms"],
+    "githubUrl": "https://github.com/RamiObaid92/DBAnonsForm.git",
+    "category": "Desktop"
+  },
+  {
+    "id": "bowling-game",
+    "title": "Bowling Game",
+    "description": "A console application for simulating a bowling game and registering members for an OOAD course.",
+    "tags": ["Desktop", "C#", ".NET", "Console", "Design Patterns"],
+    "githubUrl": "https://github.com/RamiObaid92/Bowling_Hall.git",
+    "category": "Desktop"
+  },
+  {
+    "id": "bakery-shop",
+    "title": "Bakery Shop",
+    "description": "My first ever project for a HTML and CSS course, a simple bakery shop website.",
+    "tags": ["Frontend", "HTML", "CSS"],
+    "githubUrl": "https://github.com/RamiObaid92/Bakery-Webproject.git",
+    "category": "Web"
   }
 ]
