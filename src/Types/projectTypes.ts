@@ -1,4 +1,4 @@
-export type ProjectCategory = "web" | "desktop";
+export type ProjectCategory = "Web" | "Desktop";
 
 export interface Project {
   id: string;

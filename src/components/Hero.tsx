@@ -39,7 +39,7 @@ const Hero = () => {
                   href="#contact"
                   className="inline-block bg-transparent text-white border-2 border-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition-all transform hover:scale-105 shadow-lg font-medium"
                 >
-                  Let's Talk
+                  Send me a Message
                 </a>
               </div>
             </div>

@@ -1,5 +1,5 @@
 [
-{
+  {
     "id": "alpha-portal-frontend",
     "title": "Alpha Portal Frontend",
     "description": "Alpha Portal frontend for managing projects, clients, and users with a RESTful API.",
@@ -7,11 +7,20 @@
     "githubUrl": "https://github.com/RamiObaid92/Frontend.git",
     "category": "Web"
   },
-{
+  {
     "id": "alpha-portal-backend",
     "title": "Alpha Portal Backend API",
     "description": "Alpha Portal backend service for managing projects, clients.",
-    "tags": ["Backend", "C#", "SQL", "ASP.NET Core", "EF Core", "Web API", "JWT", "Azure"],
+    "tags": [
+      "Backend",
+      "C#",
+      "SQL",
+      "ASP.NET Core",
+      "EF Core",
+      "Web API",
+      "JWT",
+      "Azure"
+    ],
     "githubUrl": "https://github.com/RamiObaid92/Backend.git",
     "category": "Web"
   },
@@ -19,7 +28,20 @@
     "id": "ventixe-frontend",
     "title": "Ventixe Frontend",
     "description": "The frontend for the Ventixe event platform, built with ASP.NET Core MVC.",
-    "tags": ["Frontend", "Backend", "C#", "ASP.NET Core", "MVC", "HTML", "CSS", "Bootstrap", "JavaScript", "REST", "gRPCS", "Azure"],
+    "tags": [
+      "Frontend",
+      "Backend",
+      "C#",
+      "ASP.NET Core",
+      "MVC",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "JavaScript",
+      "REST",
+      "gRPCS",
+      "Azure"
+    ],
     "githubUrl": "https://github.com/Ventixe-PROG2024-G1/Frontend.git",
     "category": "Web"
   },
@@ -27,7 +49,15 @@
     "id": "ventixe-events-backend",
     "title": "Ventixe Events Backend",
     "description": "A dedicated backend service for managing events on the Ventixe platform using Azure services.",
-    "tags": ["Backend", "C#", ".NET", "ASP.NET Core", "EF Core", "Web API", "Azure"],
+    "tags": [
+      "Backend",
+      "C#",
+      ".NET",
+      "ASP.NET Core",
+      "EF Core",
+      "Web API",
+      "Azure"
+    ],
     "githubUrl": "https://github.com/RamiObaid92/Ventixe-Events-Backend.git",
     "category": "Web"
   },

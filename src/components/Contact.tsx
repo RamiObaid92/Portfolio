@@ -156,7 +156,7 @@ const Contact: FC = () => {
           </span>
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          Have a question or want to work together? Feel free to reach out!
+          Feel free to reach out!
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
