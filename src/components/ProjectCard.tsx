@@ -19,6 +19,9 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
         <h3 className="text-xl font-semibold mb-2 text-center pb-4">
           {project.title}
         </h3>
+        <p className="text-gray-700 dark:text-gray-800 text-sm mb-4 flex-grow">
+          {project.description}
+        </p>
         <div className="flex flex-wrap gap-2 mb-4 justify-center">
           {project.tags.map((tag) => (
             <span
