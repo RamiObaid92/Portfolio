@@ -18,7 +18,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
           </p>
         </div>
         <div className="flex justify-center mb-4">
-          <div className="flex flex-wrap gap-2 justify-center max-w-prose">
+          <div className="flex flex-wrap justify-start gap-2 max-w-prose">
             {project.tags.map((tag) => (
               <span
                 key={tag}
