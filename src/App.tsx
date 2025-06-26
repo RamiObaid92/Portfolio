@@ -20,7 +20,7 @@ const App: FC = () => {
         if (entry.isIntersecting) {
           const targetElement = entry.target as HTMLElement;
 
-          targetElement.style.opacity = "1";
+          targetElement.classList.remove("section-hidden");
           targetElement.classList.add("animate-fade-in-up");
           observer.unobserve(targetElement);
         }
@@ -35,15 +35,14 @@ const App: FC = () => {
     const sections = document.querySelectorAll<HTMLElement>("section");
 
     sections.forEach((section) => {
-      section.style.opacity = "0";
-      section.style.transition = "opacity 0.5s ease-out";
+      section.classList.add("section-hidden");
       observer.observe(section);
     });
 
     return () => {
       sections.forEach((section) => {
         observer.unobserve(section);
-        section.style.opacity = "1";
+        section.classList.remove("section-hidden", "animate-fade-in-up");
       });
     };
   }, []);
