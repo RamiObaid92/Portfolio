@@ -12,7 +12,7 @@ const sortedProjectsData = [...projectsData].sort((a, b) =>
 );
 
 const Projects: FC = () => {
-  const [filter, setFilter] = useState<ProjectCategory | "all">("all");
+  const [filter, setFilter] = useState<ProjectCategory>("Web");
   const gridRef = useRef<HTMLDivElement>(null);
   const hasInitialized = useRef(false);
 
@@ -30,14 +30,10 @@ const Projects: FC = () => {
   };
 
   const filteredProjects = useMemo(() => {
-    if (filter === "all") {
-      return sortedProjectsData;
-    }
     return sortedProjectsData.filter((project) => project.category === filter);
   }, [filter]);
 
-  const filters: { label: string; value: ProjectCategory | "all" }[] = [
-    { label: "All Projects", value: "all" },
+  const filters: { label: string; value: ProjectCategory }[] = [
     { label: "Web", value: "Web" },
     { label: "Desktop", value: "Desktop" },
   ];
