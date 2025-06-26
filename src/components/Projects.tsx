@@ -1,24 +1,54 @@
-import { useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import type { FC } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import type { Project, ProjectCategory } from "@/types/projectTypes";
 import allProjectsData from "@/data/projectsData.json";
+import autoAnimate from "@formkit/auto-animate";
 
 const projectsData: Project[] = allProjectsData as Project[];
 
+const sortedProjectsData = [...projectsData].sort((a, b) =>
+  a.title.localeCompare(b.title),
+);
+
 const Projects: FC = () => {
   const [filter, setFilter] = useState<ProjectCategory | "all">("all");
+  const gridRef = useRef<HTMLDivElement>(null);
+  const hasInitialized = useRef(false);
 
-  const filteredProjects =
-    filter === "all"
-      ? projectsData
-      : projectsData.filter((project) => project.category === filter);
+  const initializeAutoAnimate = (element: HTMLDivElement | null) => {
+    if (element && !hasInitialized.current) {
+      setTimeout(() => {
+        autoAnimate(element, {
+          duration: 300,
+          easing: "ease-in-out",
+        });
+      }, 100);
+      hasInitialized.current = true;
+    }
+    gridRef.current = element;
+  };
+
+  const filteredProjects = useMemo(() => {
+    if (filter === "all") {
+      return sortedProjectsData;
+    }
+    return sortedProjectsData.filter((project) => project.category === filter);
+  }, [filter]);
 
   const filters: { label: string; value: ProjectCategory | "all" }[] = [
     { label: "All Projects", value: "all" },
     { label: "Web", value: "Web" },
     { label: "Desktop", value: "Desktop" },
   ];
+
+  if (filteredProjects.length === 0) {
+    return (
+      <div className="bg-gray-50 py-20 text-center">
+        <p className="text-xl text-gray-700">No projects found.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-gray-50 py-20">
@@ -43,9 +73,14 @@ const Projects: FC = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div ref={initializeAutoAnimate} className="flex flex-wrap gap-6">
           {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <div
+              key={project.id}
+              className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+            >
+              <ProjectCard project={project} />
+            </div>
           ))}
         </div>
       </div>
