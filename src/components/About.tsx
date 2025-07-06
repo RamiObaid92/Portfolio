@@ -18,7 +18,6 @@ const About = () => {
             <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-500">
               <img src={Photo} alt="Rami Obaid" className="object-cover" />
             </div>
-            {/* Decorative elements */}
             <div className="absolute -top-4 -left-4 w-20 h-20 border-t-4 border-l-4 border-blue-500"></div>
             <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-4 border-r-4 border-blue-500"></div>
           </div>

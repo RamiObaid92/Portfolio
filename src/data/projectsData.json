@@ -65,7 +65,15 @@
     "id": "ventixe-imageservice-backend",
     "title": "Ventixe Image Service Backend",
     "description": "Dedicated microservice for image upload and management operations. Built with ASP.NET Core Web API and integrates with Azure storage services for file handling.",
-    "tags": ["Backend", "C#", ".NET", "ASP.NET Core", "EF Core", "Web API", "Azure"],
+    "tags": [
+      "Backend",
+      "C#",
+      ".NET",
+      "ASP.NET Core",
+      "EF Core",
+      "Web API",
+      "Azure"
+    ],
     "githubUrl": "https://github.com/RamiObaid92/Ventixe-ImageService-Backend.git",
     "category": "Web"
   },

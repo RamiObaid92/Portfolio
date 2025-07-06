@@ -6,14 +6,6 @@ const Hero = () => {
     <div className="relative overflow-hidden">
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-800 opacity-90"></div>
-
-      {/* Animated background patterns */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full blur-3xl"></div>
-        <div className="absolute top-1/4 right-1/4 w-60 h-60 bg-blue-300 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-40 h-40 bg-indigo-300 rounded-full blur-3xl"></div>
-      </div>
-
       <div className="relative min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -53,28 +45,44 @@ const Hero = () => {
                 />
               </div>
               {/* Floating tech icons */}
-              <div className="absolute top-0 right-0 bg-white p-2 rounded-full shadow-lg">
+              <div className="animate-float absolute top-1/9 left-5 bg-white p-2 rounded-full shadow-lg">
+                <span className="text-purple-600 font-bold text-xl">.NET</span>
+              </div>
+              <div className="animate-float absolute top-1/9 right-5 bg-white p-2 rounded-full shadow-lg">
                 <span className="text-blue-600 font-bold text-xl">React</span>
               </div>
-              <div className="absolute bottom-10 left-0 bg-white p-2 rounded-full shadow-lg">
-                <span className="text-green-600 font-bold text-xl">C#</span>
-              </div>
-              <div className="absolute top-1/3 -left-10 bg-white p-2 rounded-full shadow-lg">
+              <div className="animate-float absolute top-1/2 -left-10 bg-white p-2 rounded-full shadow-lg">
                 <span className="text-purple-600 font-bold text-xl">
                   ASP.NET
                 </span>
               </div>
-              <div className="absolute bottom-0 right-10 bg-white p-2 rounded-full shadow-lg">
-                <span className="text-red-600 font-bold text-xl">Angular</span>
-              </div>
-              <div className="absolute top-1/2 -right-10 bg-white p-2 rounded-full shadow-lg">
+              <div className="animate-float absolute top-1/2 -right-10 bg-white p-2 rounded-full shadow-lg">
                 <span className="text-blue-500 font-bold text-xl">
                   TypeScript
                 </span>
               </div>
+              <div className="animate-float absolute bottom-0 left-10 bg-white p-2 rounded-full shadow-lg">
+                <span className="text-green-600 font-bold text-xl">C#</span>
+              </div>
+              <div className="animate-float absolute bottom-0 right-10 bg-white p-2 rounded-full shadow-lg">
+                <span className="text-red-600 font-bold text-xl">Angular</span>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="waves">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            className="shape-fill"
+          ></path>
+        </svg>
       </div>
     </div>
   );
