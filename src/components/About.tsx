@@ -20,6 +20,8 @@ const About = () => {
             </div>
             <div className="absolute -top-4 -left-4 w-20 h-20 border-t-4 border-l-4 border-blue-500"></div>
             <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-4 border-r-4 border-blue-500"></div>
+            <div className="absolute -top-4 -right-4 w-20 h-20 border-t-4 border-r-4 border-blue-500"></div>
+            <div className="absolute -bottom-4 -left-4 w-20 h-20 border-b-4 border-l-4 border-blue-500"></div>
           </div>
 
           <div className="space-y-6">
