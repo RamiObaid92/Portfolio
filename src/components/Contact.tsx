@@ -160,8 +160,8 @@ const Contact: FC = () => {
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-white p-8 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-6">
+          <div className="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center lg:items-start">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center lg:text-left">
               Contact Information
             </h3>
 
@@ -188,7 +188,7 @@ const Contact: FC = () => {
               ))}
             </div>
 
-            <div className="mt-10">
+            <div className="mt-10 flex flex-col items-center lg:items-start">
               <h4 className="text-lg font-semibold text-gray-800 mb-4">
                 Connect with me
               </h4>
