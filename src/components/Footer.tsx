@@ -13,6 +13,8 @@ const Footer = () => {
               <a
                 href="https://linkedin.com/in/rami-obaid-102594338"
                 className="text-gray-400 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   className="w-6 h-6"
@@ -25,6 +27,8 @@ const Footer = () => {
               <a
                 href="https://github.com/RamiObaid92"
                 className="text-gray-400 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   className="w-6 h-6"
