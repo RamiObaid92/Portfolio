@@ -19,7 +19,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
         </div>
         <div className="flex justify-center mb-4">
           <div className="flex flex-wrap justify-start gap-2 max-w-prose">
-            {project.tags.map((tag) => (
+            {project.tags.map((tag: string) => (
               <span
                 key={tag}
                 className="px-2 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium transition-colors hover:bg-blue-100"
