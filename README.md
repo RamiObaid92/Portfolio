@@ -1,54 +1,34 @@
-# React + TypeScript + Vite
+# Rami Obaid's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for my personal portfolio! This is where I share my work, skills, and experiences as a developer.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio is a modern, responsive website that provides a simple and clear way to learn about me and my projects. It’s built to work well on all devices, from computers to phones.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   **Showcase Projects:** A gallery of my work with details about each project.
+-   **Skills Section:** Highlights of what I’m good at.
+-   **Contact Form:** An easy way for visitors to reach out to me.
+-   **Responsive Design:** Looks great on any screen size.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## Tools and Technologies
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The portfolio is built using the following tools:
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+-   **React** and **TypeScript** for creating the website
+-   **Tailwind CSS** for styling
+-   **EmailJS** for managing contact form messages
+-   **AutoAnimate** for smooth animations
+-   **ESLint** and **Prettier** for clean and consistent code
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+## Contact
+
+Feel free to reach out to me! I’d love to hear about new opportunities or ideas.
+
+-   **GitHub:** [RamiObaid92](https://github.com/RamiObaid92)
+-   **Email:** [Rami.Obaid@yh.nackademin.se](mailto:Rami.Obaid@yh.nackademin.se)
+-   **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/rami-obaid-102594338/)
+
+Thanks for visiting!
