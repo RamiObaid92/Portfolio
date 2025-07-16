@@ -10,7 +10,7 @@ const About = () => {
           </span>
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          Passionate software developer with expertise in full-stack development
+          Passionate Software Developer with expertise in full-stack development
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -30,10 +30,12 @@ const About = () => {
                 My Journey
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                I'm a passionate Full-Stack Developer with a strong foundation
-                in both front-end and back-end technologies. My journey in
-                software development has been driven by a desire to create
-                impactful solutions that solve real-world problems.
+                Currently I am a student studying Software Development at
+                Nackademin specializing in both Backend and Frontend
+                Development. It started off as an interest and quickly became a
+                big passion where I always strive to improve my knowledge and
+                skills. Currently I am looking for an internship position to
+                apply my skills in a real-world setting.
               </p>
             </div>
 
@@ -42,11 +44,12 @@ const About = () => {
                 My Approach
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                With expertise in modern web technologies and a commitment to
-                clean, efficient code, I strive to build applications that are
-                not only functional but also provide an excellent user
-                experience. I believe in continuous learning and staying
-                up-to-date with the latest industry trends.
+                With expertise in modern knowledge in technologies and a
+                commitment to clean, efficient code, I strive to build
+                applications that do not only function well but also provide an
+                excellent user experience, as well as maintanable and readable
+                code as I believe that is the key to long-term success in
+                working with a team.
               </p>
             </div>
 
@@ -56,9 +59,11 @@ const About = () => {
               </h3>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
                 <li>Writing clean, maintainable, and efficient code</li>
-                <li>Creating intuitive and accessible user interfaces</li>
-                <li>Problem-solving with creative and practical solutions</li>
-                <li>Continuous learning and professional growth</li>
+                <li>Designing user-friendly and accessible interfaces</li>
+                <li>
+                  Solving problems with innovative and practical solutions
+                </li>
+                <li>Embracing continuous learning and growth</li>
               </ul>
             </div>
           </div>
