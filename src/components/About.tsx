@@ -34,8 +34,11 @@ const About = () => {
                 Nackademin specializing in both Backend and Frontend
                 Development. It started off as an interest and quickly became a
                 big passion where I always strive to improve my knowledge and
-                skills. Currently I am looking for an internship position to
-                apply my skills in a real-world setting.
+                skills.
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                Currently I am looking for an internship position to apply my
+                skills in a real-world setting.
               </p>
             </div>
 
@@ -58,13 +61,30 @@ const About = () => {
                 Core Values
               </h3>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>Writing clean, maintainable, and efficient code</li>
+                <li>
+                  Writing clean, maintainable, readable and efficient code
+                </li>
                 <li>Designing user-friendly and accessible interfaces</li>
                 <li>
                   Solving problems with innovative and practical solutions
                 </li>
                 <li>Embracing continuous learning and growth</li>
               </ul>
+            </div>
+            <div className="bg-green-50 p-6 rounded-xl shadow-sm border-l-4 border-green-500">
+              <h3 className="text-2xl font-semibold text-green-800 mb-2">
+                Hobbies
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                When I'm not coding, I enjoy exploring new technologies, for
+                future projects. I'm also an avid gamer ever since I was a kid,
+                and I love playing a variety of games.
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                Outside of gaming, I enjoy the outdoors the most as it makes me
+                feel refreshed and energized, especially going for walks and
+                exploring what nature has to offer.
+              </p>
             </div>
           </div>
         </div>
