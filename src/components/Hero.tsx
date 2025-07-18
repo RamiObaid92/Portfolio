@@ -14,8 +14,8 @@ const Hero = () => {
                 Hi, I'm <span className="text-yellow-300">Rami Obaid</span>
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 mb-8">
-                Full-Stack Developer creating elegant solutions to complex
-                problems
+                An aspiring Full-Stack Developer with a passion for building
+                modern applications.
               </p>
               <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <a

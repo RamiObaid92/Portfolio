@@ -84,7 +84,8 @@ const Skills: FC = () => {
           </span>
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          Technologies and tools I've worked with and mastered over the years
+          Technologies and tools I've worked with and mastered or currently
+          learning.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">

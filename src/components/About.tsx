@@ -82,7 +82,7 @@ const About = () => {
               </p>
               <p className="text-gray-700 leading-relaxed mt-4">
                 Outside of gaming, I enjoy the outdoors the most as it makes me
-                feel refreshed and energized, especially going for walks and
+                feel refreshed and energized, especially going on walks and
                 exploring what nature has to offer.
               </p>
             </div>
