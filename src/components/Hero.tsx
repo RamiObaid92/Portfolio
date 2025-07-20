@@ -1,5 +1,5 @@
 import Photo from "@/assets/images/20250605_174037.jpg";
-import Cv from "@/assets/files/rami-obaid-CV.pdf";
+import Cv from "@/assets/files/Rami_Obaid_Resume.pdf";
 
 const Hero = () => {
   return (

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import type { FC } from "react";
 import clsx from "clsx";
 import Photo from "@/assets/images/20250605_174037.jpg";
-import Cv from "@/assets/files/rami-obaid-CV.pdf";
+import Cv from "@/assets/files/Rami_Obaid_Resume.pdf";
 
 interface NavLink {
   title: string;
@@ -91,6 +91,7 @@ const Navbar = () => {
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
+                download="Rami_Obaid_Resume.pdf"
               >
                 Resume
               </a>
@@ -133,6 +134,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
+              download="Rami_Obaid_Resume.pdf"
             >
               Resume
             </a>
