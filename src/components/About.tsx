@@ -4,24 +4,17 @@ const About = () => {
   return (
     <div className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-4">
+        <h2 className="text-4xl font-bold text-center mb-15">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
             About Me
           </span>
         </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          Passionate Software Developer with expertise in full-stack development
-        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-500">
               <img src={Photo} alt="Rami Obaid" className="object-cover" />
             </div>
-            <div className="absolute -top-4 -left-4 w-20 h-20 border-t-4 border-l-4 border-blue-500"></div>
-            <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-4 border-r-4 border-blue-500"></div>
-            <div className="absolute -top-4 -right-4 w-20 h-20 border-t-4 border-r-4 border-blue-500"></div>
-            <div className="absolute -bottom-4 -left-4 w-20 h-20 border-b-4 border-l-4 border-blue-500"></div>
           </div>
 
           <div className="space-y-6">
