@@ -74,7 +74,7 @@
         },
         "status": {
             "success_title": "Tack!",
-            "success_message": "Ditt meddelande har skickats framgångsrikt.",
+            "success_message": "Ditt meddelande har skickats.",
             "success_button": "Skicka ett till meddelande",
             "error_message": "Det uppstod ett fel när ditt meddelande skulle skickas. Vänligen försök igen."
         },

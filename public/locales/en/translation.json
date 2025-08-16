@@ -74,7 +74,7 @@
         },
         "status": {
             "success_title": "Thank You!",
-            "success_message": "Your message has been sent successfully.",
+            "success_message": "Your message has been sent.",
             "success_button": "Send Another Message",
             "error_message": "There was an error sending your message. Please try again."
         },
