@@ -1,94 +1,95 @@
 {
-    "navbar": {
-        "home": "Hem",
-        "about": "Om mig",
-        "projects": "Projekt",
-        "contact": "Kontakt"
+  "navbar": {
+    "home": "Hem",
+    "about": "Om mig",
+    "projects": "Projekt",
+    "contact": "Kontakt",
+    "resume": "CV"
+  },
+  "hero": {
+    "greeting": "Hej, jag är Rami Obaid",
+    "title": "En blivande Full-Stack-utvecklare med en passion för att bygga moderna applikationer.",
+    "resume_button": "Ladda ner CV",
+    "contact_button": "Skicka ett meddelande"
+  },
+  "about": {
+    "title": "Om Mig",
+    "journey": {
+      "title": "Min Resa",
+      "description": "För närvarande studerar jag mjukvaruutveckling på Nackademin med inriktning på både Backend- och Frontend-utveckling. Det började som ett intresse och blev snabbt en stor passion där jag alltid strävar efter att förbättra mina kunskaper och färdigheter.",
+      "descriptionTwo": "Just nu söker jag en praktikplats för att tillämpa mina färdigheter i en verklig miljö."
     },
-    "hero": {
-        "greeting": "Hej, jag är Rami Obaid",
-        "title": "En blivande Full-Stack-utvecklare med en passion för att bygga moderna applikationer.",
-        "resume_button": "Ladda ner CV",
-        "contact_button": "Skicka ett meddelande"
+    "approach": {
+      "title": "Mitt Tillvägagångssätt",
+      "description": "Med expertis inom moderna teknologier och ett engagemang för ren, effektiv kod, strävar jag efter att bygga applikationer som inte bara fungerar bra utan också ger en utmärkt användarupplevelse, samt underhållbar och läsbar kod eftersom jag anser att det är nyckeln till långsiktig framgång i ett team."
     },
-    "about": {
-        "title": "Om Mig",
-        "journey": {
-            "title": "Min Resa",
-            "description": "För närvarande studerar jag mjukvaruutveckling på Nackademin med inriktning på både Backend- och Frontend-utveckling. Det började som ett intresse och blev snabbt en stor passion där jag alltid strävar efter att förbättra mina kunskaper och färdigheter.",
-            "descriptionTwo": "Just nu söker jag en praktikplats för att tillämpa mina färdigheter i en verklig miljö."
-        },
-        "approach": {
-            "title": "Mitt Tillvägagångssätt",
-            "description": "Med expertis inom moderna teknologier och ett engagemang för ren, effektiv kod, strävar jag efter att bygga applikationer som inte bara fungerar bra utan också ger en utmärkt användarupplevelse, samt underhållbar och läsbar kod eftersom jag anser att det är nyckeln till långsiktig framgång i ett team."
-        },
-        "coreValues": {
-            "title": "Kärnvärden",
-            "values": [
-                "Skriva ren, underhållbar, läsbar och effektiv kod",
-                "Designa användarvänliga och tillgängliga gränssnitt",
-                "Lösa problem med innovativa och praktiska lösningar",
-                "Omfamna kontinuerligt lärande och tillväxt"
-            ]
-        },
-        "hobbies": {
-            "title": "Fritidsintressen",
-            "description": "När jag inte kodar tycker jag om att utforska ny teknik för framtida projekt. Jag är också en ivrig gamer sedan jag var liten, och jag älskar att spela en mängd olika spel.",
-            "descriptionTwo": "Utanför spelandet tycker jag mest om att vara utomhus eftersom det får mig att känna mig uppfriskad och energisk, särskilt att gå på promenader och utforska vad naturen har att erbjuda."
-        }
+    "coreValues": {
+      "title": "Kärnvärden",
+      "values": [
+        "Skriva ren, underhållbar, läsbar och effektiv kod",
+        "Designa användarvänliga och tillgängliga gränssnitt",
+        "Lösa problem med innovativa och praktiska lösningar",
+        "Omfamna kontinuerligt lärande och tillväxt"
+      ]
     },
-    "projects": {
-        "title": "Utvalda Projekt",
-        "description": "Utforska mitt senaste arbete och personliga projekt",
-        "no_projects_found": "Inga projekt hittades.",
-        "filters": {
-            "web": "Webb",
-            "desktop": "Skrivbord"
-        }
-    },
-    "skills": {
-        "title": "Färdigheter & Expertis",
-        "description": "Teknologier och verktyg jag har arbetat med och behärskar eller för närvarande lär mig.",
-        "categories": {
-            "frontend": "Frontend",
-            "backend": "Backend",
-            "tools": "Verktyg & Plattformar"
-        }
-    },
-    "contact": {
-        "title": "Kontakta Mig",
-        "description": "Hör gärna av dig!",
-        "info_title": "Kontaktinformation",
-        "connect_title": "Anslut med mig",
-        "form": {
-            "name_label": "Namn",
-            "name_required": "Namn är obligatoriskt",
-            "email_label": "E-post",
-            "email_required": "E-post är obligatoriskt",
-            "email_invalid": "E-post är ogiltig",
-            "subject_label": "Ämne (Valfritt)",
-            "message_label": "Meddelande",
-            "message_required": "Meddelande är obligatoriskt",
-            "submit_button": "Skicka Meddelande",
-            "submit_loading": "Skickar..."
-        },
-        "status": {
-            "success_title": "Tack!",
-            "success_message": "Ditt meddelande har skickats.",
-            "success_button": "Skicka ett till meddelande",
-            "error_message": "Det uppstod ett fel när ditt meddelande skulle skickas. Vänligen försök igen."
-        },
-        "details": {
-            "email": "E-post",
-            "phone": "Telefon",
-            "location": "Plats"
-        }
-    },
-    "footer": {
-        "title": "Rami Obaid",
-        "description": "En passionerad Full-Stack-utvecklare fokuserad på att skapa eleganta lösningar på komplexa problem.",
-        "links_title": "Snabblänkar",
-        "contact_title": "Kontakt",
-        "copyright": "Rami Obaid. Alla rättigheter förbehållna."
+    "hobbies": {
+      "title": "Fritidsintressen",
+      "description": "När jag inte kodar tycker jag om att utforska ny teknik för framtida projekt. Jag är också en ivrig gamer sedan jag var liten, och jag älskar att spela en mängd olika spel.",
+      "descriptionTwo": "Utanför spelandet tycker jag mest om att vara utomhus eftersom det får mig att känna mig uppfriskad och energisk, särskilt att gå på promenader och utforska vad naturen har att erbjuda."
     }
+  },
+  "projects": {
+    "title": "Utvalda Projekt",
+    "description": "Utforska mitt senaste arbete och personliga projekt",
+    "no_projects_found": "Inga projekt hittades.",
+    "filters": {
+      "web": "Webb",
+      "desktop": "Skrivbord"
+    }
+  },
+  "skills": {
+    "title": "Färdigheter & Expertis",
+    "description": "Teknologier och verktyg jag har arbetat med och behärskar eller för närvarande lär mig.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Verktyg & Plattformar"
+    }
+  },
+  "contact": {
+    "title": "Kontakta Mig",
+    "description": "Hör gärna av dig!",
+    "info_title": "Kontaktinformation",
+    "connect_title": "Anslut med mig",
+    "form": {
+      "name_label": "Namn",
+      "name_required": "Namn är obligatoriskt",
+      "email_label": "E-post",
+      "email_required": "E-post är obligatoriskt",
+      "email_invalid": "E-post är ogiltig",
+      "subject_label": "Ämne (Valfritt)",
+      "message_label": "Meddelande",
+      "message_required": "Meddelande är obligatoriskt",
+      "submit_button": "Skicka Meddelande",
+      "submit_loading": "Skickar..."
+    },
+    "status": {
+      "success_title": "Tack!",
+      "success_message": "Ditt meddelande har skickats.",
+      "success_button": "Skicka ett till meddelande",
+      "error_message": "Det uppstod ett fel när ditt meddelande skulle skickas. Vänligen försök igen."
+    },
+    "details": {
+      "email": "E-post",
+      "phone": "Telefon",
+      "location": "Plats"
+    }
+  },
+  "footer": {
+    "title": "Rami Obaid",
+    "description": "En passionerad Full-Stack-utvecklare fokuserad på att skapa eleganta lösningar på komplexa problem.",
+    "links_title": "Snabblänkar",
+    "contact_title": "Kontakt",
+    "copyright": "Rami Obaid. Alla rättigheter förbehållna."
+  }
 }

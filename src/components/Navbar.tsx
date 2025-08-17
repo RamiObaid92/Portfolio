@@ -1,20 +1,15 @@
 import { useState, useEffect } from "react";
 import type { FC } from "react";
 import clsx from "clsx";
+import { useTranslation } from "react-i18next";
 import Photo from "@/assets/images/20250605_174037.jpg";
-import Cv from "@/assets/files/Rami_Obaid_Resume.pdf";
+import Resume from "@/assets/files/Rami_Obaid_Resume.pdf";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface NavLink {
   title: string;
   href: string;
 }
-
-const navLinks: NavLink[] = [
-  { title: "Home", href: "#home" },
-  { title: "About", href: "#about" },
-  { title: "Projects", href: "#projects" },
-  { title: "Contact", href: "#contact" },
-];
 
 interface NavLinksListProps {
   links: NavLink[];
@@ -42,8 +37,16 @@ const NavLinksList: FC<NavLinksListProps> = ({
 );
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const navLinks: NavLink[] = [
+    { title: t("navbar.home"), href: "#home" },
+    { title: t("navbar.about"), href: "#about" },
+    { title: t("navbar.projects"), href: "#projects" },
+    { title: t("navbar.contact"), href: "#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -87,14 +90,15 @@ const Navbar = () => {
             <div className="flex items-center space-x-8">
               <NavLinksList links={navLinks} className={desktopNavClasses} />
               <a
-                href={Cv}
+                href={Resume}
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Rami_Obaid_Resume.pdf"
               >
-                Resume
+                {t("navbar.resume")}
               </a>
+              <LanguageSwitcher scrolled={scrolled} />
             </div>
           </div>
           <button
@@ -129,15 +133,18 @@ const Navbar = () => {
               onLinkClick={() => setIsOpen(false)}
             />
             <a
-              href={Cv}
+              href={Resume}
               className="block px-3 py-2 text-blue-600 font-medium"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               download="Rami_Obaid_Resume.pdf"
             >
-              Resume
+              {t("navbar.resume")}
             </a>
+            <div className="px-3 pt-2">
+              <LanguageSwitcher scrolled={true} />
+            </div>
           </div>
         </div>
       )}

@@ -1,94 +1,95 @@
 {
-    "navbar": {
-        "home": "Home",
-        "about": "About",
-        "projects": "Projects",
-        "contact": "Contact"
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Rami Obaid",
+    "title": "An aspiring Full-Stack Developer with a passion for building modern applications.",
+    "resume_button": "Download Resume",
+    "contact_button": "Send me a Message"
+  },
+  "about": {
+    "title": "About Me",
+    "journey": {
+      "title": "My Journey",
+      "description": "Currently I am a student studying Software Development at Nackademin specializing in both Backend and Frontend Development. It started off as an interest and quickly became a big passion where I always strive to improve my knowledge and skills.",
+      "descriptionTwo": "Currently I am looking for an internship position to apply my skills in a real-world setting."
     },
-    "hero": {
-        "greeting": "Hi, I'm Rami Obaid",
-        "title": "An aspiring Full-Stack Developer with a passion for building modern applications.",
-        "resume_button": "Download Resume",
-        "contact_button": "Send me a Message"
+    "approach": {
+      "title": "My Approach",
+      "description": "With expertise in modern knowledge in technologies and a commitment to clean, efficient code, I strive to build applications that do not only function well but also provide an excellent user experience, as well as maintanable and readable code as I believe that is the key to long-term success in working with a team."
     },
-    "about": {
-        "title": "About Me",
-        "journey": {
-            "title": "My Journey",
-            "description": "Currently I am a student studying Software Development at Nackademin specializing in both Backend and Frontend Development. It started off as an interest and quickly became a big passion where I always strive to improve my knowledge and skills.",
-            "descriptionTwo": "Currently I am looking for an internship position to apply my skills in a real-world setting."
-        },
-        "approach": {
-            "title": "My Approach",
-            "description": "With expertise in modern knowledge in technologies and a commitment to clean, efficient code, I strive to build applications that do not only function well but also provide an excellent user experience, as well as maintanable and readable code as I believe that is the key to long-term success in working with a team."
-        },
-        "coreValues": {
-            "title": "Core Values",
-            "values": [
-                "Writing clean, maintainable, readable and efficient code",
-                "Designing user-friendly and accessible interfaces",
-                "Solving problems with innovative and practical solutions",
-                "Embracing continuous learning and growth"
-            ]
-        },
-        "hobbies": {
-            "title": "Hobbies",
-            "description": "When I'm not coding, I enjoy exploring new technologies, for future projects. I'm also an avid gamer ever since I was a kid, and I love playing a variety of games.",
-            "descriptionTwo": "Outside of gaming, I enjoy the outdoors the most as it makes me feel refreshed and energized, especially going on walks and exploring what nature has to offer."
-        }
+    "coreValues": {
+      "title": "Core Values",
+      "values": [
+        "Writing clean, maintainable, readable and efficient code",
+        "Designing user-friendly and accessible interfaces",
+        "Solving problems with innovative and practical solutions",
+        "Embracing continuous learning and growth"
+      ]
     },
-    "projects": {
-        "title": "Featured Projects",
-        "description": "Explore my recent work and personal projects",
-        "no_projects_found": "No projects found.",
-        "filters": {
-            "web": "Web",
-            "desktop": "Desktop"
-        }
-    },
-    "skills": {
-        "title": "Skills & Expertise",
-        "description": "Technologies and tools I've worked with and mastered or currently learning.",
-        "categories": {
-            "frontend": "Frontend",
-            "backend": "Backend",
-            "tools": "Tools & Platforms"
-        }
-    },
-    "contact": {
-        "title": "Get In Touch",
-        "description": "Feel free to reach out!",
-        "info_title": "Contact Information",
-        "connect_title": "Connect with me",
-        "form": {
-            "name_label": "Name",
-            "name_required": "Name is required",
-            "email_label": "Email",
-            "email_required": "Email is required",
-            "email_invalid": "Email is invalid",
-            "subject_label": "Subject (Optional)",
-            "message_label": "Message",
-            "message_required": "Message is required",
-            "submit_button": "Send Message",
-            "submit_loading": "Sending..."
-        },
-        "status": {
-            "success_title": "Thank You!",
-            "success_message": "Your message has been sent.",
-            "success_button": "Send Another Message",
-            "error_message": "There was an error sending your message. Please try again."
-        },
-        "details": {
-            "email": "Email",
-            "phone": "Phone",
-            "location": "Location"
-        }
-    },
-    "footer": {
-        "title": "Rami Obaid",
-        "description": "A passionate Full-Stack Developer focused on creating elegant solutions to complex problems.",
-        "links_title": "Quick Links",
-        "contact_title": "Contact",
-        "copyright": "Rami Obaid. All rights reserved."
+    "hobbies": {
+      "title": "Hobbies",
+      "description": "When I'm not coding, I enjoy exploring new technologies, for future projects. I'm also an avid gamer ever since I was a kid, and I love playing a variety of games.",
+      "descriptionTwo": "Outside of gaming, I enjoy the outdoors the most as it makes me feel refreshed and energized, especially going on walks and exploring what nature has to offer."
     }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "description": "Explore my recent work and personal projects",
+    "no_projects_found": "No projects found.",
+    "filters": {
+      "web": "Web",
+      "desktop": "Desktop"
+    }
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "description": "Technologies and tools I've worked with and mastered or currently learning.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & Platforms"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Feel free to reach out!",
+    "info_title": "Contact Information",
+    "connect_title": "Connect with me",
+    "form": {
+      "name_label": "Name",
+      "name_required": "Name is required",
+      "email_label": "Email",
+      "email_required": "Email is required",
+      "email_invalid": "Email is invalid",
+      "subject_label": "Subject (Optional)",
+      "message_label": "Message",
+      "message_required": "Message is required",
+      "submit_button": "Send Message",
+      "submit_loading": "Sending..."
+    },
+    "status": {
+      "success_title": "Thank You!",
+      "success_message": "Your message has been sent.",
+      "success_button": "Send Another Message",
+      "error_message": "There was an error sending your message. Please try again."
+    },
+    "details": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    }
+  },
+  "footer": {
+    "title": "Rami Obaid",
+    "description": "A passionate Full-Stack Developer focused on creating elegant solutions to complex problems.",
+    "links_title": "Quick Links",
+    "contact_title": "Contact",
+    "copyright": "Rami Obaid. All rights reserved."
+  }
 }

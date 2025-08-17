@@ -1,5 +1,5 @@
 import Photo from "@/assets/images/20250605_174037.jpg";
-import Cv from "@/assets/files/Rami_Obaid_Resume.pdf";
+import Resume from "@/assets/files/Rami_Obaid_Resume.pdf";
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
               </p>
               <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <a
-                  href={Cv}
+                  href={Resume}
                   className="inline-block bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-lg font-medium"
                   target="_blank"
                   rel="noopener noreferrer"
