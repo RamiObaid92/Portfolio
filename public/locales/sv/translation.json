@@ -7,13 +7,13 @@
     "resume": "CV"
   },
   "hero": {
-    "greeting": "Hej, jag är Rami Obaid",
+    "greeting": "Hej, jag är ",
     "title": "En blivande Full-Stack-utvecklare med en passion för att bygga moderna applikationer.",
     "resume_button": "Ladda ner CV",
     "contact_button": "Skicka ett meddelande"
   },
   "about": {
-    "title": "Om Mig",
+    "title": "Om mig",
     "journey": {
       "title": "Min Resa",
       "description": "För närvarande studerar jag mjukvaruutveckling på Nackademin med inriktning på både Backend- och Frontend-utveckling. Det började som ett intresse och blev snabbt en stor passion där jag alltid strävar efter att förbättra mina kunskaper och färdigheter.",
@@ -29,7 +29,7 @@
         "Skriva ren, underhållbar, läsbar och effektiv kod",
         "Designa användarvänliga och tillgängliga gränssnitt",
         "Lösa problem med innovativa och praktiska lösningar",
-        "Omfamna kontinuerligt lärande och tillväxt"
+        "Kontinuerligt lärande och tillväxt"
       ]
     },
     "hobbies": {
@@ -39,12 +39,12 @@
     }
   },
   "projects": {
-    "title": "Utvalda Projekt",
-    "description": "Utforska mitt senaste arbete och personliga projekt",
+    "title": "Mina projekt",
+    "description": "Utforska mina senaste arbeten och personliga projekt",
     "no_projects_found": "Inga projekt hittades.",
     "filters": {
-      "web": "Webb",
-      "desktop": "Skrivbord"
+      "web": "Web",
+      "desktop": "Desktop"
     }
   },
   "skills": {
@@ -71,25 +71,32 @@
       "message_label": "Meddelande",
       "message_required": "Meddelande är obligatoriskt",
       "submit_button": "Skicka Meddelande",
-      "submit_loading": "Skickar..."
-    },
-    "status": {
+      "submit_loading": "Skickar...",
       "success_title": "Tack!",
       "success_message": "Ditt meddelande har skickats.",
       "success_button": "Skicka ett till meddelande",
       "error_message": "Det uppstod ett fel när ditt meddelande skulle skickas. Vänligen försök igen."
     },
-    "details": {
+    "label": {
       "email": "E-post",
       "phone": "Telefon",
-      "location": "Plats"
+      "location": "Plats",
+      "locationValue": "Stockholm, Sverige"
     }
   },
   "footer": {
     "title": "Rami Obaid",
     "description": "En passionerad Full-Stack-utvecklare fokuserad på att skapa eleganta lösningar på komplexa problem.",
     "links_title": "Snabblänkar",
+    "links": {
+      "home": "Hem",
+      "about": "Om mig",
+      "projects": "Projekt",
+      "skills": "Färdigheter",
+      "contact": "Kontakt"
+    },
     "contact_title": "Kontakt",
-    "copyright": "Rami Obaid. Alla rättigheter förbehållna."
+    "location": "Stockholm, Sverige",
+    "copyright": "Alla rättigheter förbehållna."
   }
 }

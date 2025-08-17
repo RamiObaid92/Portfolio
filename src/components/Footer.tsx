@@ -1,14 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center">
             <h3 className="text-2xl font-bold mb-6">Rami Obaid</h3>
-            <p className="text-gray-400 mb-6">
-              A passionate Full-Stack Developer focused on creating elegant
-              solutions to complex problems.
-            </p>
+            <p className="text-gray-400 mb-6">{t("footer.description")}</p>
             <div className="flex space-x-4">
               <a
                 href="https://linkedin.com/in/rami-obaid-102594338"
@@ -42,14 +42,16 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-6">
+              {t("footer.links_title")}
+            </h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#home"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Home
+                  {t("footer.links.home")}
                 </a>
               </li>
               <li>
@@ -57,7 +59,7 @@ const Footer = () => {
                   href="#about"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  About
+                  {t("footer.links.about")}
                 </a>
               </li>
               <li>
@@ -65,7 +67,7 @@ const Footer = () => {
                   href="#projects"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Projects
+                  {t("footer.links.projects")}
                 </a>
               </li>
               <li>
@@ -73,7 +75,7 @@ const Footer = () => {
                   href="#skills"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Skills
+                  {t("footer.links.skills")}
                 </a>
               </li>
               <li>
@@ -81,14 +83,16 @@ const Footer = () => {
                   href="#contact"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Contact
+                  {t("footer.links.contact")}
                 </a>
               </li>
             </ul>
           </div>
 
           <div className="flex flex-col items-center">
-            <h3 className="text-lg font-semibold mb-6">Contact</h3>
+            <h3 className="text-lg font-semibold mb-6">
+              {t("footer.contact_title")}
+            </h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <svg
@@ -144,7 +148,7 @@ const Footer = () => {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span className="text-gray-400">Sweden, Stockholm</span>
+                <span className="text-gray-400">{t("footer.location")}</span>
               </li>
             </ul>
           </div>
@@ -152,7 +156,8 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} Rami Obaid. All rights reserved.
+            &copy; {new Date().getFullYear()} Rami Obaid.{" "}
+            {t("footer.copyright")}
           </p>
         </div>
       </div>

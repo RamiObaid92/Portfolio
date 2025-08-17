@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 interface Skill {
   name: string;
@@ -13,7 +14,7 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: "Frontend",
+    title: "skills.categories.frontend",
     icon: "💻",
     skills: [
       { name: "React", level: 85 },
@@ -26,7 +27,7 @@ const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Backend",
+    title: "skills.categories.backend",
     icon: "🔧",
     skills: [
       { name: "C#", level: 90 },
@@ -39,7 +40,7 @@ const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Tools & Platforms",
+    title: "skills.categories.tools",
     icon: "🛠️",
     skills: [
       { name: "Git", level: 100 },
@@ -75,17 +76,17 @@ const SkillBar: FC<SkillBarProps> = ({ name, level }) => {
 };
 
 const Skills: FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-4">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-            Skills & Expertise
+            {t("skills.title")}
           </span>
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          Technologies and tools I've worked with and mastered or currently
-          learning.
+          {t("skills.description")}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -97,7 +98,7 @@ const Skills: FC = () => {
               <div className="flex items-center mb-6">
                 <span className="text-3xl mr-4">{category.icon}</span>
                 <h3 className="text-2xl font-semibold text-blue-700">
-                  {category.title}
+                  {t(category.title)}
                 </h3>
               </div>
               <div className="space-y-4">

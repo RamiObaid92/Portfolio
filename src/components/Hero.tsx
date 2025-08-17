@@ -1,7 +1,10 @@
 import Photo from "@/assets/images/20250605_174037.jpg";
 import Resume from "@/assets/files/Rami_Obaid_Resume.pdf";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative overflow-hidden">
       {/* Background with gradient overlay */}
@@ -11,11 +14,11 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left">
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                Hi, I'm <span className="text-yellow-300">Rami Obaid</span>
+                {t("hero.greeting")}
+                <span className="text-yellow-300">Rami Obaid</span>
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 mb-8">
-                An aspiring Full-Stack Developer with a passion for building
-                modern applications.
+                {t("hero.title")}
               </p>
               <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <a
@@ -25,13 +28,13 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   download="Rami_Obaid_Resume.pdf"
                 >
-                  Download Resume
+                  {t("hero.resume_button")}
                 </a>
                 <a
                   href="#contact"
                   className="inline-block bg-transparent text-white border-2 border-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition-all transform hover:scale-105 shadow-lg font-medium"
                 >
-                  Send me a Message
+                  {t("hero.contact_button")}
                 </a>
               </div>
             </div>

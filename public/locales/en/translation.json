@@ -7,7 +7,7 @@
     "resume": "Resume"
   },
   "hero": {
-    "greeting": "Hi, I'm Rami Obaid",
+    "greeting": "Hi, I'm ",
     "title": "An aspiring Full-Stack Developer with a passion for building modern applications.",
     "resume_button": "Download Resume",
     "contact_button": "Send me a Message"
@@ -39,7 +39,7 @@
     }
   },
   "projects": {
-    "title": "Featured Projects",
+    "title": "My Projects",
     "description": "Explore my recent work and personal projects",
     "no_projects_found": "No projects found.",
     "filters": {
@@ -71,25 +71,32 @@
       "message_label": "Message",
       "message_required": "Message is required",
       "submit_button": "Send Message",
-      "submit_loading": "Sending..."
-    },
-    "status": {
+      "submit_loading": "Sending...",
       "success_title": "Thank You!",
       "success_message": "Your message has been sent.",
       "success_button": "Send Another Message",
       "error_message": "There was an error sending your message. Please try again."
     },
-    "details": {
+    "label": {
       "email": "Email",
       "phone": "Phone",
-      "location": "Location"
+      "location": "Location",
+      "locationValue": "Stockholm, Sweden"
     }
   },
   "footer": {
     "title": "Rami Obaid",
     "description": "A passionate Full-Stack Developer focused on creating elegant solutions to complex problems.",
     "links_title": "Quick Links",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact"
+    },
     "contact_title": "Contact",
-    "copyright": "Rami Obaid. All rights reserved."
+    "location": "Stockholm, Sweden",
+    "copyright": "All rights reserved."
   }
 }

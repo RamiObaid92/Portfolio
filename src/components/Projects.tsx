@@ -4,6 +4,7 @@ import ProjectCard from "@/components/ProjectCard";
 import type { Project, ProjectCategory } from "@/types/projectTypes";
 import allProjectsData from "@/data/projectsData.json";
 import autoAnimate from "@formkit/auto-animate";
+import { useTranslation } from "react-i18next";
 
 const projectsData: Project[] = allProjectsData as Project[];
 
@@ -12,6 +13,7 @@ const sortedProjectsData = [...projectsData].sort((a, b) =>
 );
 
 const Projects: FC = () => {
+  const { t } = useTranslation();
   const [filter, setFilter] = useState<ProjectCategory>("Web");
   const gridRef = useRef<HTMLDivElement>(null);
   const hasInitialized = useRef(false);
@@ -34,14 +36,14 @@ const Projects: FC = () => {
   }, [filter]);
 
   const filters: { label: string; value: ProjectCategory }[] = [
-    { label: "Web", value: "Web" },
-    { label: "Desktop", value: "Desktop" },
+    { label: t("projects.filters.web"), value: "Web" },
+    { label: t("projects.filters.desktop"), value: "Desktop" },
   ];
 
   if (filteredProjects.length === 0) {
     return (
       <div className="bg-gray-50 py-20 text-center">
-        <p className="text-xl text-gray-700">No projects found.</p>
+        <p className="text-xl text-gray-700">{t("projects.noneFound")}</p>
       </div>
     );
   }
@@ -51,11 +53,11 @@ const Projects: FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-4">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-            Featured Projects
+            {t("projects.title")}
           </span>
         </h2>
         <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
-          Explore my recent work and personal projects
+          {t("projects.description")}
         </p>
         <div className="flex justify-center flex-wrap space-x-2 sm:space-x-4 mb-12">
           {filters.map((f) => (
