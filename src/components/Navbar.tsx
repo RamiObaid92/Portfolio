@@ -21,20 +21,39 @@ const NavLinksList: FC<NavLinksListProps> = ({
   links,
   className,
   onLinkClick,
-}) => (
-  <>
-    {links.map((link) => (
-      <a
-        key={link.title}
-        href={link.href}
-        className={className}
-        onClick={onLinkClick}
-      >
-        {link.title}
-      </a>
-    ))}
-  </>
-);
+}) => {
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    e.preventDefault();
+
+    const targetId = href.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+
+    if (onLinkClick) {
+      onLinkClick();
+    }
+  };
+
+  return (
+    <>
+      {links.map((link) => (
+        <a
+          key={link.title}
+          href={link.href}
+          className={className}
+          onClick={(e) => handleScroll(e, link.href)}
+        >
+          {link.title}
+        </a>
+      ))}
+    </>
+  );
+};
 
 const Navbar = () => {
   const { t } = useTranslation();

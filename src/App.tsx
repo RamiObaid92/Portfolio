@@ -1,13 +1,21 @@
+import { useEffect, type FC } from "react";
+import {
+  Routes,
+  Route,
+  useParams,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
-import { useEffect, type FC } from "react";
+import Contact from "@/components/Contact";
 import Footer from "./components/Footer";
 
-const App: FC = () => {
+const PortfolioLayout: FC = () => {
   useEffect(() => {
     const observerOptions: IntersectionObserverInit = {
       root: null,
@@ -71,6 +79,40 @@ const App: FC = () => {
         </section>
       </main>
     </div>
+  );
+};
+
+const LanguageHandler: FC = () => {
+  const { lang } = useParams<{ lang: string }>();
+  const { i18n } = useTranslation();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (lang && i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang, i18n]);
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+  return <PortfolioLayout />;
+};
+
+const App: FC = () => {
+  const { i18n } = useTranslation();
+  return (
+    <Routes>
+      <Route path="/:lang" element={<LanguageHandler />} />
+      <Route path="/" element={<Navigate to={`/${i18n.language}`} replace />} />
+    </Routes>
   );
 };
 

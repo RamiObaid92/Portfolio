@@ -24,8 +24,9 @@ const LanguageSwitcher = ({ scrolled }: { scrolled: boolean }) => {
   }, []);
 
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-    setIsOpen(false);
+    const pathSegments = window.location.pathname.split("/").filter(Boolean);
+    pathSegments[0] = lng;
+    window.location.pathname = `/${pathSegments.join("/")}`;
   };
 
   const buttonClasses = clsx(
