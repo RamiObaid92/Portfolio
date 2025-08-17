@@ -2,6 +2,26 @@ import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { t } = useTranslation();
+
+  const footerLinks = [
+    { title: t("footer.links.home"), href: "#home" },
+    { title: t("footer.links.about"), href: "#about" },
+    { title: t("footer.links.projects"), href: "#projects" },
+    { title: t("footer.links.skills"), href: "#skills" },
+    { title: t("footer.links.contact"), href: "#contact" },
+  ];
+
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -46,46 +66,17 @@ const Footer = () => {
               {t("footer.links_title")}
             </h3>
             <ul className="space-y-3">
-              <li>
-                <a
-                  href="#home"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  {t("footer.links.home")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  {t("footer.links.about")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  {t("footer.links.projects")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#skills"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  {t("footer.links.skills")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  {t("footer.links.contact")}
-                </a>
-              </li>
+              {footerLinks.map((link) => (
+                <li key={link.title}>
+                  <a
+                    href={link.href}
+                    className="text-gray-400 hover:text-white transition-colors"
+                    onClick={(e) => handleScroll(e, link.href)}
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
