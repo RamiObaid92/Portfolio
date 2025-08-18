@@ -7,75 +7,90 @@
     "resume": "CV"
   },
   "hero": {
-    "greeting": "Hej, jag är ",
-    "title": "En blivande Full-Stack-utvecklare med en passion för att bygga moderna applikationer.",
-    "resume_button": "Ladda ner CV",
-    "contact_button": "Skicka ett meddelande"
+    "greeting": "Hej, jag heter ",
+    "title": "En passionerad Full-Stack-utvecklare som älskar att skapa moderna och användarvänliga applikationer.",
+    "resume_button": "Ladda ner mitt CV",
+    "contact_button": "Hör av dig"
   },
   "about": {
     "title": "Om mig",
     "journey": {
-      "title": "Min Resa",
-      "description": "För närvarande studerar jag mjukvaruutveckling på Nackademin med inriktning på både Backend- och Frontend-utveckling. Det började som ett intresse och blev snabbt en stor passion där jag alltid strävar efter att förbättra mina kunskaper och färdigheter.",
-      "descriptionTwo": "Just nu söker jag en praktikplats för att tillämpa mina färdigheter i en verklig miljö."
+      "title": "Min resa",
+      "description": "Jag studerar just nu mjukvaruutveckling på Nackademin med fokus på både backend och frontend. Det började som en hobby men växte snabbt till en passion där jag ständigt strävar efter att lära mig mer och bli bättre.",
+      "descriptionTwo": "Jag letar för närvarande efter en praktikplats där jag kan använda mina kunskaper i en verklig miljö."
     },
     "approach": {
-      "title": "Mitt Tillvägagångssätt",
-      "description": "Med expertis inom moderna teknologier och ett engagemang för ren, effektiv kod, strävar jag efter att bygga applikationer som inte bara fungerar bra utan också ger en utmärkt användarupplevelse, samt underhållbar och läsbar kod eftersom jag anser att det är nyckeln till långsiktig framgång i ett team."
+      "title": "Mitt arbetssätt",
+      "description": "Jag brinner för att skriva ren och effektiv kod som inte bara fungerar bra utan också är lätt att förstå och underhålla. Jag tror att en bra användarupplevelse och samarbete i team är nyckeln till framgång."
     },
     "coreValues": {
-      "title": "Kärnvärden",
+      "title": "Mina värderingar",
       "values": [
-        "Skriva ren, underhållbar, läsbar och effektiv kod",
-        "Designa användarvänliga och tillgängliga gränssnitt",
-        "Lösa problem med innovativa och praktiska lösningar",
-        "Kontinuerligt lärande och tillväxt"
+        "Skriva ren och lättförståelig kod",
+        "Skapa användarvänliga och tillgängliga gränssnitt",
+        "Lösa problem med kreativa och praktiska lösningar",
+        "Ständigt utvecklas och lära mig nya saker"
       ]
     },
     "hobbies": {
-      "title": "Fritidsintressen",
-      "description": "När jag inte kodar tycker jag om att utforska ny teknik för framtida projekt. Jag är också en ivrig gamer sedan jag var liten, och jag älskar att spela en mängd olika spel.",
-      "descriptionTwo": "Utanför spelandet tycker jag mest om att vara utomhus eftersom det får mig att känna mig uppfriskad och energisk, särskilt att gå på promenader och utforska vad naturen har att erbjuda."
+      "title": "På fritiden",
+      "description": "När jag inte kodar gillar jag att utforska ny teknik och planera framtida projekt. Jag är också en gamer sedan barnsben och älskar att spela olika typer av spel.",
+      "descriptionTwo": "Utöver spelandet tycker jag om att vara ute i naturen. Promenader och att upptäcka nya platser ger mig energi och inspiration."
     }
   },
   "projects": {
     "title": "Mina projekt",
-    "description": "Utforska mina senaste arbeten och personliga projekt",
+    "description": "Ta en titt på mina senaste projekt och vad jag har jobbat med.",
     "no_projects_found": "Inga projekt hittades.",
     "filters": {
-      "web": "Web",
-      "desktop": "Desktop"
+      "web": "Webb",
+      "desktop": "Skrivbord"
     }
   },
+  "projectDescription": {
+    "alpha_portal_frontend": "En React-baserad frontend för att hantera projekt, klienter och användare. Ansluter till ett RESTful backend-API och har responsiva UI-komponenter byggda med HTML, CSS och React.",
+    "alpha_portal_backend": "Ett ASP.NET Core Web API som hanterar projekt- och klienthantering. Använder Entity Framework Core och SQL Server för datahantering samt JWT för säkerhet.",
+    "ventixe_frontend": "En ASP.NET Core MVC-applikation för Ventixe-evenemangsplattformen. Kombinerar server-side rendering med klient-side JavaScript och kommunicerar med backend-tjänster via REST API:er och gRPC.",
+    "ventixe_events_backend": "En mikrotjänst byggd med ASP.NET Core Web API för att hantera evenemang på Ventixe-plattformen. Använder Entity Framework Core och är deployad på Azure.",
+    "ventixe_imageservice_backend": "En mikrotjänst för bilduppladdning och hantering. Byggd med ASP.NET Core Web API och integrerad med Azure-lagringstjänster.",
+    "my_portfolio": "Min personliga portfölj byggd med React och TypeScript. Använder Tailwind CSS för styling och visar upp mina projekt och färdigheter.",
+    "hederlige_harrys": "En gruppwebbplats för en fiktiv bilhandlare. Byggd med HTML, CSS, Bootstrap och vanilla JavaScript som en övning i samarbete.",
+    "movie_booking_react": "En React-applikation för att boka biobiljetter med funktioner för att välja sittplatser. Har responsiv design och hanterar bokningsflödet med state management.",
+    "shotgun_form": "Ett Windows-spel som implementerar Shotgun-spelmekanik med en dator som motståndare. Byggt med C# och WinForms.",
+    "address_form": "En skrivbordsapplikation för att hantera kontakter med CRUD-operationer. Använder WinForms och SQL Server.",
+    "ad_form": "En Windows Forms-applikation för att hantera annonser. Har stöd för databasoperationer med SQL Server och formulärbaserad validering.",
+    "bowling_game": "En konsolapplikation som simulerar bowling och medlemsregistrering. Utvecklad för att visa designmönster och OOP-principer.",
+    "bakery_shop": "En statisk webbplats för ett bageri byggd med HTML och CSS. Skapad som ett första projekt för att lära sig grunderna i webbutveckling."
+  },
   "skills": {
-    "title": "Färdigheter & Expertis",
-    "description": "Teknologier och verktyg jag har arbetat med och behärskar eller för närvarande lär mig.",
+    "title": "Färdigheter & verktyg",
+    "description": "Här är några av de teknologier och verktyg jag har arbetat med eller håller på att lära mig.",
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
-      "tools": "Verktyg & Plattformar"
+      "tools": "Verktyg & plattformar"
     }
   },
   "contact": {
-    "title": "Kontakta Mig",
-    "description": "Hör gärna av dig!",
-    "info_title": "Kontaktinformation",
-    "connect_title": "Anslut med mig",
+    "title": "Hör av dig",
+    "description": "Jag ser fram emot att höra från dig!",
+    "info_title": "Kontaktuppgifter",
+    "connect_title": "Hitta mig här",
     "form": {
       "name_label": "Namn",
       "name_required": "Namn är obligatoriskt",
       "email_label": "E-post",
       "email_required": "E-post är obligatoriskt",
-      "email_invalid": "E-post är ogiltig",
-      "subject_label": "Ämne (Valfritt)",
+      "email_invalid": "Ogiltig e-postadress",
+      "subject_label": "Ämne (valfritt)",
       "message_label": "Meddelande",
       "message_required": "Meddelande är obligatoriskt",
-      "submit_button": "Skicka Meddelande",
+      "submit_button": "Skicka",
       "submit_loading": "Skickar...",
       "success_title": "Tack!",
       "success_message": "Ditt meddelande har skickats.",
-      "success_button": "Skicka ett till meddelande",
-      "error_message": "Det uppstod ett fel när ditt meddelande skulle skickas. Vänligen försök igen."
+      "success_button": "Skicka ett nytt meddelande",
+      "error_message": "Något gick fel. Försök igen senare."
     },
     "label": {
       "email": "E-post",
@@ -86,7 +101,7 @@
   },
   "footer": {
     "title": "Rami Obaid",
-    "description": "En passionerad Full-Stack-utvecklare fokuserad på att skapa eleganta lösningar på komplexa problem.",
+    "description": "En passionerad Full-Stack-utvecklare som älskar att lösa problem med eleganta lösningar.",
     "links_title": "Snabblänkar",
     "links": {
       "home": "Hem",

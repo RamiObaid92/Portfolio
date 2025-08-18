@@ -1,11 +1,13 @@
 import type { FC } from "react";
 import type { Project } from "@/types/projectTypes";
+import { useTranslation } from "react-i18next";
 
 interface ProjectCardProps {
   project: Project;
 }
 
 const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
+  const { t } = useTranslation();
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform transition-all duration-200 hover:scale-105 hover:shadow-xl">
       <div className="p-6 flex flex-col flex-grow">
@@ -14,7 +16,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
         </h3>
         <div className="flex justify-center mb-4 flex-grow">
           <p className="text-gray-700 text-sm text-left max-w-prose">
-            {project.description}
+            {t(project.description)}
           </p>
         </div>
         <div className="flex justify-center mb-4">

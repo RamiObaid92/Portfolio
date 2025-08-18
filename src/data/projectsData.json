@@ -2,7 +2,7 @@
   {
     "id": "alpha-portal-frontend",
     "title": "Alpha Portal Frontend",
-    "description": "React-based frontend application for managing projects, clients, and users. Connects to a RESTful backend API and includes responsive UI components built with HTML, CSS, and React.",
+    "description": "projectDescription.alpha_portal_frontend",
     "tags": ["Frontend", "HTML", "CSS", "React", "REST", "Azure"],
     "githubUrl": "https://github.com/RamiObaid92/Frontend.git",
     "category": "Web"
@@ -10,7 +10,7 @@
   {
     "id": "alpha-portal-backend",
     "title": "Alpha Portal Backend API",
-    "description": "ASP.NET Core Web API that handles project and client management operations. Uses Entity Framework Core with SQL Server for data persistence and JWT authentication for security.",
+    "description": "projectDescription.alpha_portal_backend",
     "tags": [
       "Backend",
       "C#",
@@ -27,7 +27,7 @@
   {
     "id": "ventixe-frontend",
     "title": "Ventixe Frontend",
-    "description": "ASP.NET Core MVC application for the Ventixe event platform. Combines server-side rendering with client-side JavaScript and communicates with backend services through REST APIs and gRPC.",
+    "description": "projectDescription.ventixe_frontend",
     "tags": [
       "Frontend",
       "Backend",
@@ -48,7 +48,7 @@
   {
     "id": "ventixe-events-backend",
     "title": "Ventixe Events Backend",
-    "description": "Microservice built with ASP.NET Core Web API for handling event operations on the Ventixe platform. Uses Entity Framework Core for data access and is deployed on Azure.",
+    "description": "projectDescription.ventixe_events_backend",
     "tags": [
       "Backend",
       "C#",
@@ -64,7 +64,7 @@
   {
     "id": "ventixe-imageservice-backend",
     "title": "Ventixe Image Service Backend",
-    "description": "Dedicated microservice for image upload and management operations. Built with ASP.NET Core Web API and integrates with Azure storage services for file handling.",
+    "description": "projectDescription.ventixe_imageservice_backend",
     "tags": [
       "Backend",
       "C#",
@@ -80,7 +80,7 @@
   {
     "id": "my-portfolio",
     "title": "My Portfolio",
-    "description": "Personal portfolio website built with React and TypeScript. Uses Tailwind CSS for styling and showcases development projects and technical skills.",
+    "description": "projectDescription.my_portfolio",
     "tags": ["Frontend", "HTML", "CSS", "Tailwind", "React", "TypeScript"],
     "githubUrl": "https://github.com/RamiObaid92/Portfolio.git",
     "category": "Web"
@@ -88,7 +88,7 @@
   {
     "id": "hederlige-harrys",
     "title": "Hederlige Harrys",
-    "description": "Group project website for a fictional used car dealership. Built with HTML, CSS, Bootstrap, and vanilla JavaScript as a collaborative web development exercise.",
+    "description": "projectDescription.hederlige_harrys",
     "tags": ["Frontend", "HTML", "CSS", "Bootstrap", "JavaScript"],
     "githubUrl": "https://github.com/boopaboy/Hederlige-Harrys-.git",
     "category": "Web"
@@ -96,7 +96,7 @@
   {
     "id": "movie-booking-react",
     "title": "Movie Booking App",
-    "description": "React application for movie ticket booking with seat selection functionality. Implements state management for booking flow and responsive design for mobile and desktop use.",
+    "description": "projectDescription.movie_booking_react",
     "tags": ["Frontend", "HTML", "CSS", "React", "JavaScript"],
     "githubUrl": "https://github.com/RamiObaid92/Movie-Booking-React.git",
     "category": "Web"
@@ -104,7 +104,7 @@
   {
     "id": "shotgun-form",
     "title": "Shotgun Game",
-    "description": "Windows desktop game implementing Shotgun game mechanics with computer opponent. Built using C# and WinForms with game logic and UI event handling.",
+    "description": "projectDescription.shotgun_form",
     "tags": ["Desktop", "C#", ".NET", "WinForms"],
     "githubUrl": "https://github.com/RamiObaid92/FormShotgun.git",
     "category": "Desktop"
@@ -112,7 +112,7 @@
   {
     "id": "address-form",
     "title": "Address Form",
-    "description": "Desktop application for contact management with CRUD operations. Uses WinForms for the interface and SQL Server for data storage and retrieval.",
+    "description": "projectDescription.address_form",
     "tags": ["Desktop", "C#", ".NET", "SQL Server", "WinForms"],
     "githubUrl": "https://github.com/RamiObaid92/FormAdress.git",
     "category": "Desktop"
@@ -120,7 +120,7 @@
   {
     "id": "ad-form",
     "title": "Ad Form",
-    "description": "Windows Forms application for managing advertisement listings. Implements database operations with SQL Server and form-based data entry and validation.",
+    "description": "projectDescription.ad_form",
     "tags": ["Desktop", "C#", ".NET", "SQL Server", "WinForms"],
     "githubUrl": "https://github.com/RamiObaid92/DBAnonsForm.git",
     "category": "Desktop"
@@ -128,7 +128,7 @@
   {
     "id": "bowling-game",
     "title": "Bowling Game",
-    "description": "Console application that simulates bowling game scoring and member registration system. Developed for an Object-Oriented Analysis and Design course, demonstrating design patterns and OOP principles.",
+    "description": "projectDescription.bowling_game",
     "tags": ["Desktop", "C#", ".NET", "Console", "Design Patterns"],
     "githubUrl": "https://github.com/RamiObaid92/Bowling_Hall.git",
     "category": "Desktop"
@@ -136,7 +136,7 @@
   {
     "id": "bakery-shop",
     "title": "Bakery Shop",
-    "description": "Static website for a bakery business built with HTML and CSS. Created as a first web development project for learning fundamental web technologies and layout techniques.",
+    "description": "projectDescription.bakery_shop",
     "tags": ["Frontend", "HTML", "CSS"],
     "githubUrl": "https://github.com/RamiObaid92/Bakery-Webproject.git",
     "category": "Web"
