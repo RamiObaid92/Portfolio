@@ -153,21 +153,16 @@ const Contact: FC = () => {
   return (
     <div id="contact" className="bg-gradient-to-b from-white to-blue-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-4">
+        <h2 className="text-4xl font-bold text-center mb-16">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
             {t("contact.title")}
           </span>
         </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          {t("contact.description")}
-        </p>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center lg:items-start">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center lg:text-left">
               {t("contact.info_title")}
             </h3>
-
             <div className="space-y-6">
               {contactInfo.map((item) => (
                 <div key={item.label} className="flex items-start">

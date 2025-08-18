@@ -3,8 +3,7 @@
     "home": "Home",
     "about": "About",
     "projects": "Projects",
-    "contact": "Contact",
-    "resume": "Resume"
+    "contact": "Contact"
   },
   "hero": {
     "greeting": "Hi, I'm ",
@@ -73,7 +72,6 @@
   },
   "contact": {
     "title": "Get in Touch",
-    "description": "I'd love to hear from you!",
     "info_title": "Contact Info",
     "connect_title": "Find Me Here",
     "form": {

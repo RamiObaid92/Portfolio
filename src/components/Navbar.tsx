@@ -3,7 +3,6 @@ import type { FC } from "react";
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
 import Photo from "@/assets/images/20250605_174037.jpg";
-import Resume from "@/assets/files/Rami_Obaid_Resume.pdf";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 interface NavLink {
@@ -108,15 +107,6 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
               <NavLinksList links={navLinks} className={desktopNavClasses} />
-              <a
-                href={Resume}
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-                download="Rami_Obaid_Resume.pdf"
-              >
-                {t("navbar.resume")}
-              </a>
               <LanguageSwitcher scrolled={scrolled} />
             </div>
           </div>
@@ -151,16 +141,6 @@ const Navbar = () => {
               className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"
               onLinkClick={() => setIsOpen(false)}
             />
-            <a
-              href={Resume}
-              className="block px-3 py-2 text-blue-600 font-medium"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsOpen(false)}
-              download="Rami_Obaid_Resume.pdf"
-            >
-              {t("navbar.resume")}
-            </a>
             <div className="px-3 pt-2">
               <LanguageSwitcher scrolled={true} />
             </div>
