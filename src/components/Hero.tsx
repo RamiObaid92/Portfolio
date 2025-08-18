@@ -4,6 +4,17 @@ import { useTranslation } from "react-i18next";
 
 const Hero = () => {
   const { t } = useTranslation();
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="relative overflow-hidden">
@@ -33,6 +44,7 @@ const Hero = () => {
                 <a
                   href="#contact"
                   className="inline-block bg-transparent text-white border-2 border-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition-all transform hover:scale-105 shadow-lg font-medium"
+                  onClick={(e) => handleScroll(e, "#contact")}
                 >
                   {t("hero.contact_button")}
                 </a>

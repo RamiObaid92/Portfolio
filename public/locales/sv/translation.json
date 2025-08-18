@@ -42,8 +42,8 @@
     "description": "Ta en titt på mina senaste projekt och vad jag har jobbat med.",
     "no_projects_found": "Inga projekt hittades.",
     "filters": {
-      "web": "Webb",
-      "desktop": "Skrivbord"
+      "web": "Web",
+      "desktop": "Desktop"
     }
   },
   "projectDescription": {

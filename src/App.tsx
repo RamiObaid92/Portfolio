@@ -23,6 +23,12 @@ const PortfolioLayout: FC = () => {
       threshold: 0.1,
     };
 
+    // This function runs when the animation finishes
+    const handleAnimationEnd = (event: AnimationEvent) => {
+      const target = event.target as HTMLElement;
+      target.classList.remove("animate-fade-in-up");
+    };
+
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -30,6 +36,9 @@ const PortfolioLayout: FC = () => {
 
           targetElement.classList.remove("section-hidden");
           targetElement.classList.add("animate-fade-in-up");
+          targetElement.addEventListener("animationend", handleAnimationEnd, {
+            once: true,
+          });
           observer.unobserve(targetElement);
         }
       });
@@ -50,7 +59,7 @@ const PortfolioLayout: FC = () => {
     return () => {
       sections.forEach((section) => {
         observer.unobserve(section);
-        section.classList.remove("section-hidden", "animate-fade-in-up");
+        section.removeEventListener("animationend", handleAnimationEnd);
       });
     };
   }, []);
