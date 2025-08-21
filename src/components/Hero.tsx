@@ -32,11 +32,11 @@ const Hero = () => {
               </p>
               <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <a
-                  href="/files/resume-rami-obaid-eng.pdf"
+                  href="/files/resume-rami-obaid-en.pdf"
                   className="inline-block bg-yellow-400 text-gray-900 px-3.5 py-3 justify-center rounded-lg hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-lg font-medium"
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="cv-rami-obaid-eng.pdf"
+                  download="cv-rami-obaid-en.pdf"
                 >
                   {t("hero.resume_button_en")}
                 </a>
