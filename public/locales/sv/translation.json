@@ -7,8 +7,9 @@
   },
   "hero": {
     "greeting": "Hej, jag heter ",
-    "title": "En passionerad Full-Stack-utvecklare som älskar att skapa moderna och användarvänliga applikationer.",
-    "resume_button": "Ladda ner mitt CV",
+    "title": "En passionerad programutvecklare som brinner för att skapa moderna och användarvänliga applikationer.",
+    "resume_button_en": "Ladda ner CV (ENG)",
+    "resume_button_sv": "Ladda ner CV (SV)",
     "contact_button": "Hör av dig"
   },
   "about": {
@@ -27,7 +28,7 @@
       "values": [
         "Skriva ren och lättförståelig kod",
         "Skapa användarvänliga och tillgängliga gränssnitt",
-        "Lösa problem med kreativa och praktiska lösningar",
+        "Lösa problem med effektiva och praktiska lösningar",
         "Ständigt utvecklas och lära mig nya saker"
       ]
     },
@@ -63,7 +64,7 @@
   },
   "skills": {
     "title": "Färdigheter & verktyg",
-    "description": "Här är några av de teknologier och verktyg jag har arbetat med eller håller på att lära mig.",
+    "description": "Här är några av de teknologier och verktyg jag har arbetat med samt håller på att lära mig.",
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",

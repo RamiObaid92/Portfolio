@@ -23,7 +23,7 @@ const PortfolioLayout: FC = () => {
       threshold: 0.1,
     };
 
-    // This function runs when the animation finishes
+    // Runs when the animation finishes
     const handleAnimationEnd = (event: AnimationEvent) => {
       const target = event.target as HTMLElement;
       target.classList.remove("animate-fade-in-up");

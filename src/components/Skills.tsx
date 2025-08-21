@@ -17,12 +17,12 @@ const skillCategories: SkillCategory[] = [
     title: "skills.categories.frontend",
     icon: "💻",
     skills: [
-      { name: "React", level: 85 },
+      { name: "React", level: 95 },
       { name: "Angular", level: 60 },
       { name: "Vue.js", level: 30 },
-      { name: "Next.js", level: 36 },
+      { name: "Next.js", level: 35 },
       { name: "JavaScript", level: 85 },
-      { name: "TypeScript", level: 70 },
+      { name: "TypeScript", level: 80 },
       { name: "HTML/CSS", level: 100 },
     ],
   },
@@ -30,11 +30,11 @@ const skillCategories: SkillCategory[] = [
     title: "skills.categories.backend",
     icon: "🔧",
     skills: [
-      { name: "C#", level: 90 },
+      { name: "C#", level: 95 },
       { name: "ASP.NET", level: 85 },
       { name: "Python", level: 70 },
       { name: "C++", level: 50 },
-      { name: "SQL", level: 80 },
+      { name: "SQL", level: 90 },
       { name: "RESTful", level: 85 },
       { name: "gRPC", level: 60 },
     ],
@@ -44,7 +44,7 @@ const skillCategories: SkillCategory[] = [
     icon: "🛠️",
     skills: [
       { name: "Git", level: 100 },
-      { name: "Azure", level: 85 },
+      { name: "Azure Cloud Services", level: 80 },
       { name: "VS Code", level: 95 },
       { name: "Visual Studio", level: 95 },
       { name: "PyCharm", level: 75 },
@@ -95,7 +95,7 @@ const Skills: FC = () => {
               key={category.title}
               className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow"
             >
-              <div className="flex items-center mb-6">
+              <div className="flex items-center justify-center mb-6">
                 <span className="text-3xl mr-4">{category.icon}</span>
                 <h3 className="text-2xl font-semibold text-blue-700">
                   {t(category.title)}

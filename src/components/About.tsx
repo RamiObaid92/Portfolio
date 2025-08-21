@@ -28,8 +28,11 @@ const About = () => {
               <p className="text-gray-700 leading-relaxed">
                 {t("about.journey.description")}
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-700 leading-relaxed mt-3">
                 {t("about.journey.descriptionTwo")}
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-3">
+                {t("about.journey.descriptionThree")}
               </p>
             </div>
 

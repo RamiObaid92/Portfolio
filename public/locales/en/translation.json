@@ -7,16 +7,18 @@
   },
   "hero": {
     "greeting": "Hi, I'm ",
-    "title": "A passionate Full-Stack Developer who loves building modern and user-friendly applications.",
-    "resume_button": "Download My Resume",
+    "title": "A passionate Software Developer who loves building modern and user-friendly applications.",
+    "resume_button_en": "Download Resume (ENG)",
+    "resume_button_sv": "Download Resume (SV)",
     "contact_button": "Get in Touch"
   },
   "about": {
     "title": "About Me",
     "journey": {
       "title": "My Journey",
-      "description": "I'm currently studying Software Development at Nackademin, focusing on both backend and frontend development. What started as a hobby quickly turned into a passion, and I'm always striving to learn more and improve my skills.",
-      "descriptionTwo": "Right now, I'm looking for an internship where I can apply my skills in a real-world environment."
+      "description": "I started out in a different field after graduating upper secondary school with a electrician degree, I quickly realised it wasn't something I wanted to pursue long-term. I've always been interested in technology and programming, but never pursued it until later in life, when I decided to make a change.",
+      "descriptionTwo": "I'm currently studying Software Development at Nackademin, focusing on both backend and frontend development. What started as an interest quickly turned into a passion, and I'm always striving to learn more and improve my skills.",
+      "descriptionThree": "Right now, I'm looking for an internship where I can apply my skills in a real-world environment."
     },
     "approach": {
       "title": "My Approach",
@@ -27,7 +29,7 @@
       "values": [
         "Writing clean and easy-to-read code",
         "Designing user-friendly and accessible interfaces",
-        "Solving problems with creative and practical solutions",
+        "Solving problems with effective and practical solutions",
         "Continuously learning and growing"
       ]
     },
@@ -39,7 +41,7 @@
   },
   "projects": {
     "title": "My Projects",
-    "description": "Check out my latest work and personal projects.",
+    "description": "Check out my projects that I have done for my studies as well as personal projects.",
     "no_projects_found": "No projects found.",
     "filters": {
       "web": "Web",
@@ -63,7 +65,7 @@
   },
   "skills": {
     "title": "Skills & Tools",
-    "description": "Here are some of the technologies and tools I've worked with or am currently learning.",
+    "description": "Here are some of the technologies and tools I've worked with as well as currently learning.",
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",

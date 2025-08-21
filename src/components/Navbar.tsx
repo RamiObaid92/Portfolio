@@ -80,7 +80,7 @@ const Navbar = () => {
     },
   );
 
-  const desktopNavClasses = clsx("text-sm font-medium transition-colors", {
+  const desktopNavClasses = clsx("text-md font-medium transition-colors", {
     "text-gray-700 hover:text-gray-600": scrolled,
     "text-white hover:text-blue-300": !scrolled,
   });
