@@ -206,7 +206,7 @@ const Contact: FC = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white p-8 rounded-xl shadow-lg min-h-[577px] flex flex-col">
+          <div className="bg-white p-8 rounded-xl shadow-lg min-h-[580px] flex flex-col">
             {submitStatus === "success" ? (
               <div className="text-center py-16 flex flex-col items-center justify-center h-full">
                 <svg

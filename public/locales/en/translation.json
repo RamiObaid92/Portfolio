@@ -6,8 +6,8 @@
     "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hi, I'm ",
-    "title": "A passionate Software Developer who loves building modern and user-friendly applications.",
+    "greeting": "Hi, my name is ",
+    "title": "I'm a Software Developer with a passion for building modern and user-friendly applications.",
     "resume_button_en": "Download Resume (ENG)",
     "resume_button_sv": "Download Resume (SV)",
     "contact_button": "Get in Touch"
@@ -30,6 +30,7 @@
         "Writing clean and easy-to-read code",
         "Designing user-friendly and accessible interfaces",
         "Solving problems with effective and practical solutions",
+        "Maintaining a positive mindset",
         "Continuously learning and growing"
       ]
     },
@@ -101,7 +102,7 @@
   },
   "footer": {
     "title": "Rami Obaid",
-    "description": "A passionate Full-Stack Developer who loves solving problems with elegant solutions.",
+    "description": "A passionate Software Developer who strives for solving problems with effective solutions.",
     "links_title": "Quick Links",
     "links": {
       "home": "Home",

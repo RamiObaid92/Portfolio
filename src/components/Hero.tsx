@@ -72,7 +72,7 @@ const Hero = () => {
                 <span className="text-purple-600 font-bold text-xl">.NET</span>
               </div>
               <div className="animate-float absolute top-1/9 right-5 bg-white p-2 rounded-full shadow-lg">
-                <span className="text-blue-600 font-bold text-xl">React</span>
+                <span className="text-sky-500 font-bold text-xl">React</span>
               </div>
               <div className="animate-float absolute top-1/2 -left-10 bg-white p-2 rounded-full shadow-lg">
                 <span className="text-purple-600 font-bold text-xl">
@@ -80,7 +80,7 @@ const Hero = () => {
                 </span>
               </div>
               <div className="animate-float absolute top-1/2 -right-10 bg-white p-2 rounded-full shadow-lg">
-                <span className="text-blue-500 font-bold text-xl">
+                <span className="text-blue-600 font-bold text-xl">
                   TypeScript
                 </span>
               </div>

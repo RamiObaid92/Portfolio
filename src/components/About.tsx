@@ -54,6 +54,7 @@ const About = () => {
                 <li>{t("about.coreValues.values.1")}</li>
                 <li>{t("about.coreValues.values.2")}</li>
                 <li>{t("about.coreValues.values.3")}</li>
+                <li>{t("about.coreValues.values.4")}</li>
               </ul>
             </div>
             <div className="bg-green-50 p-6 rounded-xl shadow-sm border-l-4 border-green-500">
