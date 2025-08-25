@@ -206,7 +206,7 @@ const Contact: FC = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white p-8 rounded-xl shadow-lg">
+          <div className="bg-white p-8 rounded-xl shadow-lg min-h-[577px] flex flex-col">
             {submitStatus === "success" ? (
               <div className="text-center py-16 flex flex-col items-center justify-center h-full">
                 <svg
@@ -242,7 +242,7 @@ const Contact: FC = () => {
                     htmlFor="name"
                     className="block text-gray-700 font-medium mb-2"
                   >
-                    {t("contact.form.name_label")}
+                    {t("contact.form.name_label") + "*"}
                   </label>
                   <input
                     type="text"
@@ -264,7 +264,7 @@ const Contact: FC = () => {
                     htmlFor="email"
                     className="block text-gray-700 font-medium mb-2"
                   >
-                    {t("contact.form.email_label")}
+                    {t("contact.form.email_label") + "*"}
                   </label>
                   <input
                     type="email"
@@ -305,7 +305,7 @@ const Contact: FC = () => {
                     htmlFor="message"
                     className="block text-gray-700 font-medium mb-2"
                   >
-                    {t("contact.form.message_label")}
+                    {t("contact.form.message_label") + "*"}
                   </label>
                   <textarea
                     id="message"
